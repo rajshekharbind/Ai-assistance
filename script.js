@@ -49,16 +49,16 @@ document.addEventListener("DOMContentLoaded", () => {
       handleCommand(command);
     };
 
-    recognition.onend = () => {
-      btn.textContent = "Start Listening";
-      btn.classList.remove("listening");
-    };
+    // recognition.onend = () => {
+    //   btn.textContent = "Start Listening";
+    //   btn.classList.remove("listening");
+    // };
 
     recognition.onerror = (event) => {
       console.error("Recognition error:", event.error);
       speak("Sorry, I didn't catch that.");
       btn.textContent = "Start Listening";
-      //btn.classList.remove("listening");
+      btn.classList.remove("listening");
     };
   });
 });
