@@ -12,20 +12,7 @@ html, body {
   width: 100%;
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 10px;
-  color: white;
-  background-image: url('./Leonardo_Phoenix_A_visually_captivating_hightech_background_fo_3.jpg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: black;
-  overflow: hidden;
-}
+
 
 .container {
   padding: 2rem;
