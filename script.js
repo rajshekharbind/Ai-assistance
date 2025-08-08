@@ -44,15 +44,15 @@ document.addEventListener("DOMContentLoaded", () => {
       recognition.start();
     });
 
-    recognition.onresult = (event) => {
-      const command = event.results[0][0].transcript.toLowerCase();
-      handleCommand(command);
-    };
-
-    // recognition.onend = () => {
-    //   btn.textContent = "Start Listening";
-    //   btn.classList.remove("listening");
+    // recognition.onresult = (event) => {
+    //   const command = event.results[0][0].transcript.toLowerCase();
+    //   handleCommand(command);
     // };
+
+    recognition.onend = () => {
+      btn.textContent = "Start Listening";
+      btn.classList.remove("listening");
+    };
 
     recognition.onerror = (event) => {
       console.error("Recognition error:", event.error);
