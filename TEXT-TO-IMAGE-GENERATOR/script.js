@@ -19,9 +19,9 @@ document.getElementById("GenerateBtn").addEventListener("click", async function 
       );
       console.log(response)
   
-      // if (!response.ok) {
-      //   throw new Error("API error");
-      // }
+      if (!response.ok) {
+        throw new Error("API error");
+      }
   
       const result = await response.blob(); // Get the image as a blob
       return result;
